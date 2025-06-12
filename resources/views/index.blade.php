@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
+
         <div class="sidebar">
         <div class="logo">
-            <img width="60px" height="60px" src="Akk.png" alt="">
+            <img width="60px" height="60px" src="https://smkpariwisatatelkom.sch.id/wp-content/uploads/2021/04/logo-TS-1.jpg" alt="">
         </div>
         <ul class="menu">
             <li class="active">
@@ -62,15 +64,19 @@
         </div>
         <div class="card--container">
             <h1 class="main--title">Today's Data</h1>
-            <div class="card--wrapper">
+             <div class="card--wrapper">
                 <div class="payment-card">
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
                                 Current Balance
                             </span>
+
+
                             <span class="amount--value">
-                                Rp.500.000
+
+                                Rp. {{ number_format($total, 0, ',', '.') }}
+
                             </span>
                         </div>
                         <i class="fas fa-rupiah-sign icon">
@@ -86,9 +92,11 @@
                             <span class="title">
                                 target balance
                             </span>
-                            <span class="amount--value">
-                                Rp.50.000.000
-                            </span>
+
+                                <input type="number" class="amount--value" name="target" value="" >
+
+
+
                         </div>
                         <i class="fas fa-rupiah-sign icon">
                         </i>
@@ -144,455 +152,26 @@
                                 <th>Description</th>
                                 <th>Amount</th>
                                 <th>Category</th>
-                                <th>Status</th>
+
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2023-01-01
-                                    </td>
-                                    <td>
-                                        Income
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Rp.500.000
-                                    </td>
-                                    <td>
-                                        Salary
-                                    </td>
-                                    <td>
-                                        Edit
-                                    </td>
-                                </tr>
+                                @foreach ($transactionLogs as $row)
+                                    <tr>
+                                        <td>{{ $row->created_at->toDateString() }}</td>
+                                        <td>{{ $row->transaction_type }}</td>
+                                        <td>{{ $row->description }}</td>
+                                        <td>Rp.{{ number_format($row->amount, 0, ',', '.') }}</td>
+                                        <td>{{ $row->source }}</td>
+
+
+                                    </tr>
+                                @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="7">
-                                        Total : Rp.1.500.000
+                                        Total : Rp.{{ number_format($total, 0, ',', '.') }}
                                     </td>
                                 </tr>
                             </tfoot>

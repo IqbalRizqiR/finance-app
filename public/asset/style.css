@@ -188,6 +188,7 @@ body {
 .amount--value {
     font-size: 24px;
     font-family: 'inter';
+    background-color: transparent;
 }
 
 .icon {
@@ -511,4 +512,81 @@ input {
     background: #8DBCC7 !important;
     border: 1px solid #8DBCC7 !important;
     color: white !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .header--wrapper {
+        padding: 10px 20px;
+    }
+
+    .header--title span {
+        font-size: 18px;
+    }
+
+    .header--title h1 {
+        font-size: 14px !important;
+    }
+
+    .search--box {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        color: #8DBCC7;
+    }
+
+    .box--popup {
+        width: 350px;
+        height: 450px;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width:100%;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .header---wrapper {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .header--title span{
+        font-size: 20px;
+    }
+
+    .header--title h1 {
+        font-size: 15px !important;
+    }
+
+    .search--box {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        color: #8DBCC7;
+    }
+
 }
