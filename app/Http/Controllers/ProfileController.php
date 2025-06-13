@@ -19,6 +19,11 @@ class ProfileController extends Controller
             'name' => $request->input('name'),
             'balance' => $request->input('balance', 0),
         ]);
+        if ($create) {
+            return redirect()->back()->with('success', 'Money source created successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to create money source.');
+        }
     }
     public function updateBalance(Request $request, $id)
     {

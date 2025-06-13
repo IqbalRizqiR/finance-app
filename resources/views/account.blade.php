@@ -222,11 +222,13 @@
                         </table>
                     </div>
                 </div>
-                <div class="button-plus">
+                <button onclick="openModal()" class="button-plus">
                     <i id="openModal" class="fas fa-bars icon"></i>
-                </div>
+                </button>
             </div>
+            @include('moneySource-pop')
         </div>
     </div>
 </body>
+<script src="{{ asset('asset/main.js') }}"></script>
 </html>
