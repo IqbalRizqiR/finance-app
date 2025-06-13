@@ -13,40 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-
-
-        <div class="sidebar">
-        <div class="logo">
-            <img width="60px" height="60px" src="https://smkpariwisatatelkom.sch.id/wp-content/uploads/2021/04/logo-TS-1.jpg" alt="">
-        </div>
-        <ul class="menu">
-            <li class="active">
-                <a href="#">
-                    <i class="fa fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="account.html">
-                    <i class="fa fa-user"></i>
-                    <span>Profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa fa-cog"></i>
-                    <span>Settings</span>
-                </a>
-            </li>
-            <li class="logout">
-                <a href="#">
-                    <i class="fa fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
+    @include('sidebar')
     <div class="main--content">
         <div class="header--wrapper">
             <div class="header--title">
@@ -56,8 +23,8 @@
             <div class="user--info">
                 <div class="search--box">
                     <i class="fa-solid fa-search">
-                    <input type="text" placeholder="Search">
                     </i>
+                    <input type="text" placeholder="Search">
                 </div>
                 <img style="object-fit: cover;" src="https://web.rupa.ai/wp-content/uploads/2023/07/aruna3619_A_professional-looking_male_profile_picture_in_a_mini_998d7c7a-cc37-4401-813c-3674a117d857.png" alt="">
             </div>
@@ -65,7 +32,7 @@
         <div class="card--container">
             <h1 class="main--title">Today's Data</h1>
              <div class="card--wrapper">
-                <div class="payment-card">
+                <div class="payment-card ">
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
@@ -86,11 +53,11 @@
                         **** **** **** 6013
                     </span>
                 </div>
-                <div class="payment-card">
+                <div class="payment-card ">
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                target balance
+                                Target Savings
                             </span>
 
                                 <input type="number" class="amount--value" name="target" value="" >
@@ -105,31 +72,14 @@
                         **** **** **** 6013
                     </span>
                 </div>
-                <div class="payment-card">
+                <div class="payment-card ">
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                other needs
+                                Debit
                             </span>
                             <span class="amount--value">
                                 Rp.1.000.000
-                            </span>
-                        </div>
-                        <i class="fas fa-rupiah-sign icon">
-                        </i>
-                    </div>
-                    <span class="card--detail">
-                        **** **** **** 6013
-                    </span>
-                </div>
-                <div class="payment-card">
-                    <div class="card--header">
-                        <div class="amount">
-                            <span class="title">
-                                worship
-                            </span>
-                            <span class="amount--value">
-                                Rp.10.000.000
                             </span>
                         </div>
                         <i class="fas fa-rupiah-sign icon">
