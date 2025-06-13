@@ -35,74 +35,25 @@
         <div class="card--container">
             <h1 class="main--title">Today's Data</h1>
             <div class="card--wrapper">
-                <div class="payment-card">
-                    <div class="card--header">
-                        <div class="amount">
-                            <span class="title">
-                                Seabank
-                            </span>
-                            <span class="amount--value">
-                                Rp.500.000
-                            </span>
+                @foreach ($sources as $item)
+                    <div class="payment-card">
+                        <div class="card--header">
+                            <div class="amount">
+                                <span class="title">
+                                    {{ $item->name }}
+                                </span>
+                                <span class="amount--value">
+                                    Rp.{{ number_format($item->balance, 0, ',', '.') }}
+                                </span>
+                            </div>
+                            <i class="fas fa-rupiah-sign icon">
+                            </i>
                         </div>
-                        <i class="fas fa-rupiah-sign icon">
-                        </i>
+                        <span class="card--detail">
+                            **** **** **** 6013
+                        </span>
                     </div>
-                    <span class="card--detail">
-                        **** **** **** 6013
-                    </span>
-                </div>
-                <div class="payment-card">
-                    <div class="card--header">
-                        <div class="amount">
-                            <span class="title">
-                                target balance
-                            </span>
-                            <span class="amount--value">
-                                Rp.50.000.000
-                            </span>
-                        </div>
-                        <i class="fas fa-rupiah-sign icon">
-                        </i>
-                    </div>
-                    <span class="card--detail">
-                        **** **** **** 6013
-                    </span>
-                </div>
-                <div class="payment-card">
-                    <div class="card--header">
-                        <div class="amount">
-                            <span class="title">
-                                other needs
-                            </span>
-                            <span class="amount--value">
-                                Rp.1.000.000
-                            </span>
-                        </div>
-                        <i class="fas fa-rupiah-sign icon">
-                        </i>
-                    </div>
-                    <span class="card--detail">
-                        **** **** **** 6013
-                    </span>
-                </div>
-                <div class="payment-card">
-                    <div class="card--header">
-                        <div class="amount">
-                            <span class="title">
-                                worship
-                            </span>
-                            <span class="amount--value">
-                                Rp.10.000.000
-                            </span>
-                        </div>
-                        <i class="fas fa-rupiah-sign icon">
-                        </i>
-                    </div>
-                    <span class="card--detail">
-                        **** **** **** 6013
-                    </span>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="tabular--wrapper">

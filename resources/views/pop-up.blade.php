@@ -26,6 +26,18 @@
                                     <input type="text" step="0.01" name="description" placeholder="Description" />
                                 </div>
                             </fieldset>
+                            <fieldset class="description">
+                                <legend>Money Source</legend>
+                                <div class="savings--icon">
+                                    <i class="fa-solid fa-list icon2"></i>
+                                    <select name="source_id" id="">
+                                        <option value="" selected>Select Source</option>
+                                        @foreach ($sources as $source)
+                                            <option value="{{ $source->id }}">{{ $source->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </fieldset>
                             <div class="button--bottom--input">
                                 <button onclick="closeModal()" class="button--control">Cancel</button>
                                 <button class="button--control">Save</button>
