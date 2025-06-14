@@ -10,7 +10,8 @@ class ProfileController extends Controller
     public function index()
     {
         $sources = MoneySource::all();
-        return view('account', compact('sources'));
+        $totalBalance = $sources->sum('balance');
+        return view('account', compact('sources', 'totalBalance'));
     }
 
     public function storeSource(Request $request)
@@ -31,5 +32,9 @@ class ProfileController extends Controller
         $moneySource->balance = $request->input('balance');
         $moneySource->save();
         return redirect()->back();
+    }
+
+    public function setting(){
+        return view('setting');
     }
 }

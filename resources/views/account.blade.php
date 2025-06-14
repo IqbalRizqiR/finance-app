@@ -25,10 +25,11 @@
                 <div class="box">
                     <div class="card--balance">
                         <i class="fas fa-dollar icon"></i>
+                        <div class="balance--content">
+                            <span class="balance--title">Total Balance</span>
+                            <span class="balance--value">Rp.{{ number_format($totalBalance, 0, ',', '.') }}</span>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-
                 </div>
             </div>
         </div>

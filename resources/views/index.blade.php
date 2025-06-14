@@ -57,13 +57,11 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Target Savings
+                                Incomes
                             </span>
-
-                                <input type="number" class="amount--value" name="target" value="" >
-
-
-
+                            <span class="amount--value">
+                                Rp. {{ number_format($incomeTotal, 0, ',', '.') }}
+                            </span>
                         </div>
                         <i class="fas fa-rupiah-sign icon">
                         </i>
@@ -76,10 +74,10 @@
                     <div class="card--header">
                         <div class="amount">
                             <span class="title">
-                                Debit
+                                Expenses
                             </span>
                             <span class="amount--value">
-                                Rp.1.000.000
+                                Rp. {{ number_format($expenseTotal, 0, ',', '.') }}
                             </span>
                         </div>
                         <i class="fas fa-rupiah-sign icon">

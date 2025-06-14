@@ -1,6 +1,6 @@
 <div class="sidebar">
         <div class="logo">
-            <img width="60px" height="60px" src="https://smkpariwisatatelkom.sch.id/wp-content/uploads/2021/04/logo-TS-1.jpg" alt="">
+            <img width="60px" height="60px" src="{{ asset('asset/Akk.png') }}" alt="">
         </div>
         <ul class="menu">
             <li class="{{ Request::is('/') ? 'active' : '' }}">
@@ -15,8 +15,8 @@
                     <span>Profile</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li  class="{{ Request::is('setting') ? 'active' : '' }}">
+                <a href="{{ route('setting') }}">
                     <i class="fa fa-cog"></i>
                     <span>Settings</span>
                 </a>

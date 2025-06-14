@@ -39,8 +39,8 @@
                                 </div>
                             </fieldset>
                             <div class="button--bottom--input">
-                                <button onclick="closeModal()" class="button--control">Cancel</button>
-                                <button class="button--control">Save</button>
+                                <button onclick="closeModal()" type="button" class="button--control">Cancel</button>
+                                <button type="submit" class="button--control">Save</button>
                             </div>
                         </form>
                     </div>

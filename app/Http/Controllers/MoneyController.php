@@ -11,10 +11,12 @@ class MoneyController extends Controller
     public function index(Request $request)
     {
         $transactionLogs = TransactionLog::all();
+        $incomeTotal = TransactionLog::where('transaction_type', 'income')->sum('amount');
+        $expenseTotal = TransactionLog::where('transaction_type', 'expense')->sum('amount');
         $total = MoneySource::sum('balance');
         $sources = MoneySource::all();
         $target = $request->input('target');
-        return view('index', compact('transactionLogs', 'total', 'sources'));
+        return view('index', compact('transactionLogs', 'total', 'sources', 'incomeTotal', 'expenseTotal' ));
     }
 
     public function create (Request $request){
